@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — NEXUS</title>
+<meta name="description" content="Get in touch with the NEXUS research studio.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="field" aria-hidden="true">
+  <div class="field__grid"></div>
+  <div class="field__glow field__glow--a"></div>
+  <div class="field__glow field__glow--b"></div>
+  <div class="field__particles"></div>
+  <div class="field__cursor"></div>
+</div>
+
+<header class="nav">
+  <a href="index.html" class="nav__brand"><span class="nav__brand-mark" aria-hidden="true"></span>NEXUS</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="explore.html">Explore</a>
+    <a href="projects.html">Projects</a>
+    <a href="lab.html">Lab</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav__cta">
+    <a href="contact.html" class="btn btn--ghost btn--small">Get in touch</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="explore.html">Explore</a>
+  <a href="projects.html">Projects</a>
+  <a href="lab.html">Lab</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav__mobile-foot">NEXUS Research Studio &mdash; Est. 2019</div>
+</div>
+
+<main>
+
+  <section class="pagehead" style="padding-bottom: 20px;">
+    <div class="wrap">
+      <p class="eyebrow reveal">Contact</p>
+      <h1 class="pagehead__title reveal">Tell us what you&rsquo;re trying to build.</h1>
+      <p class="pagehead__desc reveal">Whether it's a project, a role, or just a question about how something works &mdash; this reaches the studio directly.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 10px;">
+    <div class="wrap">
+      <div class="contact-layout">
+
+        <form class="reveal" data-contact-form novalidate>
+          <div class="field-group">
+            <label for="c-name">Name</label>
+            <input class="field-input" type="text" id="c-name" name="name" placeholder="Your full name" autocomplete="name" required>
+            <span class="field-error" role="alert"></span>
+          </div>
+          <div class="field-group">
+            <label for="c-email">Email</label>
+            <input class="field-input" type="email" id="c-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+            <span class="field-error" role="alert"></span>
+          </div>
+          <div class="field-group">
+            <label for="c-message">Message</label>
+            <textarea class="field-input" id="c-message" name="message" rows="5" placeholder="What are you working on?" required></textarea>
+            <span class="field-error" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message <span class="btn__arrow">&rarr;</span></button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info reveal">
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:studio@nexus.io">studio@nexus.io</a>
+          </div>
+          <div>
+            <h4>Studio</h4>
+            <p>412 Meridian Ave, Suite 6<br>Portland, OR 97209</p>
+          </div>
+          <div>
+            <h4>Response time</h4>
+            <p>Within two business days</p>
+          </div>
+          <div>
+            <h4>Elsewhere</h4>
+            <div class="social-row">
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="NEXUS on Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="NEXUS on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="NEXUS on LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5.98 5.98 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <h3 class="footer__title">Let&rsquo;s build what&rsquo;s next.</h3>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>SITE</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="explore.html">Explore</a>
+        </div>
+        <div class="footer__col">
+          <h4>WORK</h4>
+          <a href="projects.html">Projects</a>
+          <a href="lab.html">Lab</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>ELSEWHERE</h4>
+          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NEXUS Research Studio.</span>
+      <span>Designed &amp; built in-house.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
