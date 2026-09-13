@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore — NEXUS</title>
+<meta name="description" content="Browse everything NEXUS is building across systems, interfaces and applied research.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="field" aria-hidden="true">
+  <div class="field__grid"></div>
+  <div class="field__glow field__glow--a"></div>
+  <div class="field__glow field__glow--b"></div>
+  <div class="field__particles"></div>
+  <div class="field__cursor"></div>
+</div>
+
+<header class="nav">
+  <a href="index.html" class="nav__brand"><span class="nav__brand-mark" aria-hidden="true"></span>NEXUS</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="explore.html">Explore</a>
+    <a href="projects.html">Projects</a>
+    <a href="lab.html">Lab</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav__cta">
+    <a href="contact.html" class="btn btn--ghost btn--small">Get in touch</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="explore.html">Explore</a>
+  <a href="projects.html">Projects</a>
+  <a href="lab.html">Lab</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav__mobile-foot">NEXUS Research Studio &mdash; Est. 2019</div>
+</div>
+
+<main>
+
+  <section class="pagehead" style="padding-bottom: 30px;">
+    <div class="wrap">
+      <p class="eyebrow reveal">Explore</p>
+      <h1 class="pagehead__title reveal">Everything NEXUS is working on, in one place.</h1>
+      <p class="pagehead__desc reveal">Filter by discipline or search directly. Every card opens with more detail on how the work actually functions.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="wrap">
+      <div class="explore__controls reveal">
+        <div class="filters" role="group" aria-label="Filter by category">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="systems">Systems</button>
+          <button class="filter" data-filter="interface">Interface</button>
+          <button class="filter" data-filter="research">Research</button>
+          <button class="filter" data-filter="hardware">Hardware</button>
+        </div>
+        <div class="searchbox">
+          <label for="explore-search" class="visually-hidden" style="position:absolute; left:-9999px;">Search</label>
+          <input type="text" id="explore-search" placeholder="Search the studio's work" data-explore-search>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+      </div>
+
+      <div class="explore-grid reveal" data-explore-grid>
+
+        <div class="explore-card" data-category="systems">
+          <p class="explore-card__cat">Systems</p>
+          <h3 class="explore-card__title">Aurora Grid</h3>
+          <p class="explore-card__brief">Distributed frame rendering across independent GPUs.</p>
+          <p class="explore-card__more">Aurora Grid splits a single render across a mesh of machines and reassembles it before the next refresh, using a predictive scheduler to rebalance load mid-frame.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="research">
+          <p class="explore-card__cat">Research</p>
+          <h3 class="explore-card__title">Signal Atlas</h3>
+          <p class="explore-card__brief">Mapping citywide spectrum activity into one layer.</p>
+          <p class="explore-card__more">Rooftop SDR sensors classify spectrum activity at the edge and report compact event summaries into a live, queryable map.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="interface">
+          <p class="explore-card__cat">Interface</p>
+          <h3 class="explore-card__title">Hollow Type</h3>
+          <p class="explore-card__brief">A variable font that reacts to scroll velocity.</p>
+          <p class="explore-card__more">Every glyph behaves like a small physics object: weight and width interpolate live from a single variable font file as the reader moves.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="systems">
+          <p class="explore-card__cat">Systems</p>
+          <h3 class="explore-card__title">Quiet Mesh</h3>
+          <p class="explore-card__brief">Peer-to-peer messaging that survives dead networks.</p>
+          <p class="explore-card__more">Messages hop device-to-device over local radio when the internet drops, re-encrypting at every hop, then reconcile with the cloud once connectivity returns.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="research">
+          <p class="explore-card__cat">Research</p>
+          <h3 class="explore-card__title">Glass Ledger</h3>
+          <p class="explore-card__brief">Audit trails for automated decisions.</p>
+          <p class="explore-card__more">Captures the inputs, weights and thresholds behind an automated decision at the moment it's made, and renders them as a short, readable explanation for auditors.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="hardware">
+          <p class="explore-card__cat">Hardware</p>
+          <h3 class="explore-card__title">Nightfall OS</h3>
+          <p class="explore-card__brief">An operating layer built for instruments that sleep.</p>
+          <p class="explore-card__more">Assumes a device is asleep 99.9% of its life; every subsystem is built around waking cleanly and batching sensor reads into short bursts.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="interface">
+          <p class="explore-card__cat">Interface</p>
+          <h3 class="explore-card__title">Field Notation</h3>
+          <p class="explore-card__brief">A visual language for describing live systems.</p>
+          <p class="explore-card__more">An internal notation for sketching distributed systems on a whiteboard, later formalized into a shared diagramming toolkit used across every NEXUS project.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="hardware">
+          <p class="explore-card__cat">Hardware</p>
+          <h3 class="explore-card__title">Tidepool Sensors</h3>
+          <p class="explore-card__brief">Low-power environmental sensing at the coastline.</p>
+          <p class="explore-card__more">A network of solar-charged sensors reading tide, salinity and temperature, feeding Nightfall OS's power model back into the field.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+        <div class="explore-card" data-category="systems">
+          <p class="explore-card__cat">Systems</p>
+          <h3 class="explore-card__title">Undertow</h3>
+          <p class="explore-card__brief">A queueing layer for traffic spikes nobody predicted.</p>
+          <p class="explore-card__more">Absorbs sudden load by shedding low-priority work first, using a scoring system tuned per client rather than a blanket rate limit.</p>
+          <span class="explore-card__toggle">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <h3 class="footer__title">Let&rsquo;s build what&rsquo;s next.</h3>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>SITE</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="explore.html">Explore</a>
+        </div>
+        <div class="footer__col">
+          <h4>WORK</h4>
+          <a href="projects.html">Projects</a>
+          <a href="lab.html">Lab</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>ELSEWHERE</h4>
+          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 NEXUS Research Studio.</span>
+      <span>Designed &amp; built in-house.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
